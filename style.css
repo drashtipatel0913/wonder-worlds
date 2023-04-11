@@ -212,3 +212,18 @@ header .logo {
    transition: all 0.5s ease;
    color: #ffffff;
 }
+
+/* /////// Footer Media Query for tablet /////// */
+@media only screen and (max-width: 900px) {
+   .footer .container {
+      grid-template-columns: 50% 50%;
+   }
+}
+
+/* /////// Footer Media Query for mobile /////// */
+@media only screen and (max-width: 500px) {
+   .footer .container {
+      grid-template-columns: 100%;
+   }
+
+}
