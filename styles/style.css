@@ -205,7 +205,7 @@ header .logo:hover {
 /* /////////////////////////////// Wonder 5 (Machu Picchu) /////////////////////////////// */
 
 main .featured-container {
-   background: url('/assests/MachuPicchu/Image8.jpg');
+   background: url('/assests/MachuPicchu/Image1.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -292,8 +292,8 @@ main .featured-container {
    display: grid;
    grid-template-columns: 50% 50%;
    grid-template-areas:
-      'h1 img'
-      'p img';
+      'h1 slide'
+      'p slide';
    background: #ffffff;
    align-items: center;
    justify-content: center;
@@ -315,13 +315,6 @@ main .featured-container {
    color: #252422;
    text-transform: capitalize;
    grid-area: p;
-}
-
-.content img {
-   object-fit: cover;
-   grid-area: img;
-   height: 100%;
-   width: 100%;
 }
 
 /* /////////////////////////////// Tablet Views /////////////////////////////// */
@@ -441,3 +434,87 @@ main .featured-container {
    }
 
 }
+
+.slider-frame {
+   grid-area: slide;
+   overflow: hidden;
+   height: 100%;
+   width: 100%;
+}
+
+.image-container {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   float: left;
+   overflow: hidden;
+}
+
+.image-container img {
+   object-fit: cover;
+   object-position: center;
+   height: 80vh;
+   width: 100%;
+}
+
+
+
+.slide-images {
+   width: 100%;
+   height: 80vh;
+   margin: 0 0 0 -80vh;
+   position: relative;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration: 9s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-play-state: running;
+}
+
+
+@-webkit-keyframes slide_animation {
+   0% {
+      left: 0;
+   }
+
+   10% {
+      left: 0;
+   }
+
+   20% {
+      left: 100%;
+   }
+
+   30% {
+      left: 100%;
+   }
+
+   40% {
+      left: 200%;
+   }
+
+   50% {
+      left: 200%;
+   }
+
+   60% {
+      left: 100%;
+   }
+
+   70% {
+      left: 100%;
+   }
+
+   80% {
+      left: 0;
+   }
+
+   90% {
+      left: 0;
+   }
+
+   100% {
+      left: 0;
+   }
+}
+ 
