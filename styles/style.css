@@ -263,7 +263,7 @@ main .featured-container {
    right: 0;
    bottom: 0;
    left: 0;
-   background: linear-gradient(90deg, #eb5e28 0%, #252422 100%);
+      background: linear-gradient(90deg, #eb5e28 10%, #03ea03 100%);
    transform: translate3d(0px, 7px, 0) scale(0.93);
    filter: blur(20px);
    opacity: var(0.7);
