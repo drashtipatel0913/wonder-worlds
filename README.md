@@ -18,25 +18,20 @@ This is a simple website that showcases the Seven Wonders of the World, built us
 [javascript]: https://www.w3schools.com/js/DEFAULT.asp
 [github]: https://github.com/
 
-##### Conestoga College (Semester 1)    
-###### Course    : Web Development  
+<br>
+<br>
+
+### Conestoga College (Semester 1)    
+###### Course    : Web Development
 ###### Subject   : Responsive Site Design   
 ###### Group Name: Power Rangers   
 
-##### Members : 
-###### Members in Group 3:  
-1. Karan Dhiman
-2. Drashti Patel
-3. Aditi Jha
-4. Twinkle Verma
-5. Ishan Patel
-
-##### Responsibilities: 
-Page 1: Homepage - Introduction - Karan Dhiman  
-Page 2: Wonder 1 - The Colosseum, Rome, Italy - Aditi Jha  
-Page 3: Wonder 2 - The Great Wall of China - Ishan Patel  
-Page 4: Wonder 3 - The Taj Mahal, India - Twinkle Verma  
-Page 5: Wonder 4 - Christ the Redeemer, Brazil - Drashti Patel  
-Page 6: Wonder 5 - Machu Picchu, Peru - Drashti Patel  
-Page 7: Wonder 6 - Chichen Itzá, Mexico - Ishan Patel  
-Page 8: Wonder 7 - Petra, Jordan - Karan Dhiman
+#### Members & Responsibilities: 
+Homepage - Karan Dhiman  
+The Colosseum, Rome, Italy - Aditi Jha  
+The Great Wall of China - Ishan Patel  
+The Taj Mahal, India - Twinkle Verma  
+Christ the Redeemer, Brazil - **Drashti Patel**  
+Machu Picchu, Peru - **Drashti Patel**  
+Chichen Itzá, Mexico - Ishan Patel  
+Petra, Jordan - Karan Dhiman
