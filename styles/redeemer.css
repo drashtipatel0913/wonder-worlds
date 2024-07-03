@@ -17,7 +17,7 @@
 header {
    left: 0;
    width: 100%;
-   padding: 20px 40px;
+   padding: 10px 40px;
    background: #252422;
    display: flex;
    justify-content: space-between;
@@ -28,22 +28,19 @@ header {
 
 /* /////////////////////////////// Logo /////////////////////////////// */
 
-header .logo {
-   text-shadow: 0 0 20px #eb5e28;
-   text-decoration: none;
-   text-transform: capitalize;
-   color: #fffcf2;
-   font-size: 1.7em;
-   font-weight: 500;
+.logo {
    transition: all 0.50s ease;
 }
 
-header .logo:hover {
-   padding-left: 10px;
-   text-shadow: 0 0 2px #eb5e28;
-   color: #eb5e28;
+.logo img {
+   margin-top: 10px;
+   vertical-align: middle;
+   height: 60px;
 }
 
+.logo:hover {
+   padding-left: 10px;
+}
 
 /* /////////////////////////////// Navigation /////////////////////////////// */
 
@@ -83,7 +80,7 @@ header .logo:hover {
 .footer {
    width: 100%;
    background-color: #252422;
-   padding: 20px 0;
+   padding: 50px 0;
 }
 
 .footer .container {
@@ -102,6 +99,10 @@ header .logo:hover {
    margin-left: 20%;
 }
 
+.page-links ul {
+   margin-top: 20px;
+}
+
 .page-links h4 {
    font-size: 17px;
    color: #fff;
@@ -109,7 +110,7 @@ header .logo:hover {
    margin-bottom: 35px;
    font-weight: 400;
    position: relative;
-   margin-top: 30px;
+   margin-top: 50px;
 }
 
 .page-links h4::before {
@@ -121,6 +122,26 @@ header .logo:hover {
    height: 3px;
    box-sizing: border-box;
    width: 50px;
+}
+
+.page-links .logo {
+   font-size: 17px;
+   color: #fff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 400;
+   position: relative;
+}
+
+.page-links .logo::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -30px;
+   background-color: #eb5e28;
+   height: 3px;
+   box-sizing: border-box;
+   width: 100px;
 }
 
 .page-links ul li:not(:last-child) {
@@ -203,6 +224,64 @@ header .logo:hover {
    color: #eb5e28;
 }
 
+/* /////////////////////////////// Tablet Views /////////////////////////////// */
+
+@media only screen and (max-width: 1024px) {
+
+   /* /////// Navigation Menu /////// */
+   .navigation {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.507);
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(20px);
+      margin-left: -100%;
+      transition: all 0.5s ease;
+   }
+
+   .navigation.mobile-menu {
+      margin-left: 0;
+   }
+
+   #nav-menu {
+      right: 30px;
+      position: absolute;
+      display: block;
+      font-size: 30px;
+      color: #ffffff;
+      cursor: pointer;
+   }
+
+   .navigation a {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 20px 0;
+      align-items: center;
+   }
+
+   /* /////// Footer /////// */
+   .footer .container {
+      grid-template-columns: 50% 50%;
+   }
+
+}
+
+/* /////////////////////////////// Mobile Views /////////////////////////////// */
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+
+   /* /////// Footer /////// */
+   .footer .container {
+      grid-template-columns: 100%;
+   }
+
+}
 
 /* ///////////// Content /////////////////////// */
 
@@ -210,7 +289,7 @@ header .logo:hover {
    text-align: center;
    height: 90vh;
    width: 100%;
-   background: url('/assests/Redeemer/Image4.jpg');
+   background: url('../assests/Redeemer/Image4.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -368,70 +447,29 @@ header .logo:hover {
 
 .secondary-content {
    text-align: center;
-   height: fit-content;
+   height: 70vh;
    width: 100%;
    display: grid;
    grid-template-columns: 50% 50%;
-   background: url('/assests/Redeemer/bg-Image.jpg');
+   background: url('../assests/Redeemer/bg-Image.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
 }
 
 .secondary-content .text-container {
+   padding-top: 8%;
    background: #ffffffd8;
 }
 
-.secondary-content .text-container h1{
+.secondary-content .text-container h1 {
    font-size: 2rem;
    padding: 3%;
 }
 
 /* /////////////////////////////// Tablet Views /////////////////////////////// */
 
-@media only screen and (max-width: 950px) {
-
-   /* /////// Navigation Menu /////// */
-   .navigation {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.507);
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      backdrop-filter: blur(20px);
-      margin-left: -100%;
-      transition: all 0.5s ease;
-   }
-
-   .navigation.mobile-menu {
-      margin-left: 0;
-   }
-
-   #nav-menu {
-      right: 30px;
-      position: absolute;
-      display: block;
-      font-size: 30px;
-      color: #ffffff;
-      cursor: pointer;
-   }
-
-   .navigation a {
-      font-size: 1rem;
-      text-transform: uppercase;
-      margin: 20px 0;
-      align-items: center;
-   }
-
-   /* /////// Footer /////// */
-   .footer .container {
-      grid-template-columns: 50% 50%;
-   }
+@media only screen and (max-width: 1024px) {
 
    /* /////// Featured Section /////// */
    .featured-text h1 {
@@ -446,11 +484,20 @@ header .logo:hover {
       font-size: 2rem;
    }
 
+   .secondary-content {
+      grid-template-columns: 100%;
+      height: fit-content;
+   }
+
+   .secondary-content .text-container {
+      padding: 0;
+   }
+
 }
 
 /* /////////////////////////////// Mobile Views /////////////////////////////// */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) and (min-width: 480px) {
 
    /* /////// Footer /////// */
    .footer .container {
@@ -472,6 +519,7 @@ header .logo:hover {
 
    .secondary-content {
       grid-template-columns: 100%;
+      height: fit-content;
    }
 
 }
