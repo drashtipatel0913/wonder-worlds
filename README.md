@@ -22,16 +22,18 @@ This is a simple website that showcases the Seven Wonders of the World, built us
 <br>
 
 ### Conestoga College (Semester 1)    
-###### Course    : Web Development
-###### Subject   : Responsive Site Design   
-###### Group Name: Power Rangers   
+> **Course**    : Web Development  
+> **Subject**   : Responsive Site Design   
+> **Group Name**  : Power Rangers   
 
-#### Members & Responsibilities: 
-Homepage - Karan Dhiman  
-The Colosseum, Rome, Italy - Aditi Jha  
-The Great Wall of China - Ishan Patel  
-The Taj Mahal, India - Twinkle Verma  
-Christ the Redeemer, Brazil - **Drashti Patel**  
-Machu Picchu, Peru - **Drashti Patel**  
-Chichen Itzá, Mexico - Ishan Patel  
-Petra, Jordan - Karan Dhiman
+#### Members & Responsibilities:
+- **Drashti Patel**:
+  - Homepage - Header & Footer
+  - Christ the Redeemer, Brazil
+  - Machu Picchu, Peru
+  - The Great Wall of China
+  - Chichen Itzá, Mexico
+- **Karan Dhiman**:
+  - Petra, Jordan
+- **Twinkle Verma**: The Taj Mahal, India
+- **Aditi Jha**: The Colosseum, Rome, Italy
